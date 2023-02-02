@@ -34,5 +34,8 @@ def handle_message(message: telebot.types.Message):
     except Exception as ex:
         print(ex)
 
-
-bot.polling()
+while True:
+    try:
+        bot.polling()
+    except Exception as ex:
+        print(ex)
